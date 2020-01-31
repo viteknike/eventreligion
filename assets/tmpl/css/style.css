@@ -66,6 +66,27 @@ header .book {
     vertical-align: middle;}
 #nav-menu {
     display: none;}
+.main-screen {
+    background-image: url('../../../images/main-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5rem;}
+.main-screen h1 {
+    font-size: 5.875rem;
+    margin-left: -12px;
+    padding: 10rem 0 0 0;}
+.main-text p {
+    font-size: 24px;
+    font-weight: 500; 
+    width: 52%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;}
+.main-screen img{
+    width: 10px;}
+.content {
+    margin-bottom: 6rem;}
+
 .container .navi {
     margin: 5rem auto 3rem auto;}
 .navi a {
@@ -75,6 +96,13 @@ header .book {
     margin-right: 5px;
     width: 15px;
     height: 15px;}
+.events .text-in h3 {
+    padding-bottom: 2rem;
+    font-weight: bold;
+    font-size: 30px;}
+.events .text-in p {
+    padding-left: 8rem;
+    font-size: 12px;}
 .events .event-item {
     position: relative;
     padding: 0;}
@@ -215,6 +243,11 @@ footer {
         left: 15px;}
     .events .event-item:nth-child(even) .text-in {
         right: 15px;}
+    .main-text p {
+        font-size: 11px;}
+    .events .text-in p {
+        padding-left: 0;
+        font-size: 1rem;}
 }
 @media (min-width: 768px) and (max-width: 991px) {
     html {
