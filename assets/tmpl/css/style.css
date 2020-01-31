@@ -72,6 +72,7 @@ header .book {
     background-size: cover;
     margin-bottom: 5rem;}
 .main-screen h1 {
+    font-weight: 600;
     font-size: 5.875rem;
     margin-left: -12px;
     padding: 10rem 0 0 0;}
@@ -246,9 +247,10 @@ footer {
     .main-text p {
         font-size: 11px;}
     .events .text-in p {
-        padding-left: 0;
-        font-size: 1rem;}
-}
+        padding-left: 8rem;
+        font-size: 12px;}
+    .events .text-in h3 {
+        padding-bottom: 2rem;}
 @media (min-width: 768px) and (max-width: 991px) {
     html {
         font-size: 14px;}
