@@ -44,6 +44,8 @@ body {
     background-color: #000;}
 a, a:hover {
     color: #fff;}
+.menu a.active, .navi a.active {
+    text-decoration: underline;}
 header {
     padding: 3.750rem 0 0 0;}
 header .contacts {
@@ -52,41 +54,54 @@ header .contacts {
 header .phone {
     display: inline-block;
     vertical-align: middle;}
-header .socnet, header .book {
+header .socnet {
+    margin-left: 20px;
+    font-size: 1.375rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;}
+header .book {
+    font-size: 1.375rem;
     display: inline-block;
     vertical-align: middle;}
-.main-screen {
-    background-image: url('../../../images/main-bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 5rem;}
-.main-screen h1 {
-    font-size: 5.875rem;
-    margin-left: -12px;
-    padding: 10rem 0 0 0;}
-.main-text p {
-    font-size: 24px;
-    font-weight: 500; 
-    width: 52%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5rem;}
-.main-screen img{
-    width: 10px;}
-.events {
-        margin-bottom: 3rem;}
+#nav-menu {
+    display: none;}
+.container .navi {
+    margin: 5rem auto 3rem auto;}
+.navi a {
+    margin-right: 4rem;}
+.navi a img {
+    font-size: 14px;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;}
+.events .event-item {
+    position: relative;
+    padding: 0;}
+.events .events .row {
+    margin-right: 0;
+    margin-right: 0;}
 .events img {
     width: 100%;}
-.events .text-in h3 {
-    padding-bottom: 2rem;
-    font-weight: bold;
-    font-size: 30px;}
-.events .text-in p {
-    padding-left: 8rem;
-    font-size: 12px;}
-.content {
-    margin-bottom: 6rem;
-}
+.events .event-item .text-in {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom left, rgba(0, 0, 0, 0), #000);
+    transition: .3s ease-in-out;
+    opacity: 0;}
+.events .event-item a:hover .text-in {
+    opacity: 1;}
+.events .event-item .text-in>div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 3rem;}
+.events .event-item .text-in h3 {
+    font-size: 2rem;}
 main .video {
     background-color: #383838;
     height: 35rem;
@@ -103,6 +118,8 @@ main .video {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;}
+.events {
+    overflow: hidden;}
 .title {
     font-size: 1rem;
     font-weight: 600;
@@ -121,8 +138,7 @@ main .video {
     color: #fff;
     font-size: .875rem;}
 .row.feedback{
-    margin:5rem 0 0;
-}
+    margin:5rem 0 0;}
 .feedback * {
     outline: 0;}
 .feedback button {
@@ -136,11 +152,38 @@ main .video {
 footer {
     padding: 3rem 0;}
 @media (min-width: 300px) and (max-width: 767px) {
-    .main-text p {
-        font-size: 11px;
-    }
     html {
         font-size: 9px;}
+    .navi {
+        display: none;}
+    #nav-menu img {
+        width: 5px;}
+    #nav-menu {
+        display: block;
+        margin-top: 4rem;}
+    #nav-menu .btn {
+        color: #fff;
+        width: 100%;
+        font-size: 3rem;
+        line-height: .5;
+        text-align: right;
+        padding: 0;
+        letter-spacing: -2px}
+    #nav-menu .dropdown-menu a.active {
+        text-decoration: underline;
+        }
+    #nav-menu .btn:focus, #nav-menu .btn:active {
+        box-shadow: none;}
+    #dropdownMenuButton {
+        font-size: 15px;}
+    .dropdown-menu {
+        background-color: #383838;
+        text-align: center;}
+    .dropdown-menu li {
+        list-style-type: none;
+        padding: 3px 10px;
+        font-size: 11px;
+        display: block;}
     header .contacts {
         text-align: center;
         margin-top: 1.5rem;
@@ -150,20 +193,28 @@ footer {
         align-items: baseline;}
     header .socnet {
         font-size: 1.8rem;
-        margin-left: 30px;}
+        margin: 0;}
     header .book {
-        font-size: 1.8rem;
-        margin-left: 10px;
-    }
+        font-size: 1.8rem;}
     .main-screen h1 {
         font-size: 40px;
         margin: 0;}
+    .events {
+        margin-top: 2rem;}
     .events .event-item .text-in {
         opacity: 1;}
     .events .event-item .text-in>div {
         padding: .5rem;}
     .menu a {
         font-size: 1.4rem;}
+    .events .event-item:nth-child(odd) {
+        padding-left: 15px;}
+    .events .event-item:nth-child(even) {
+        padding-right: 15px;}
+    .events .event-item:nth-child(odd) .text-in {
+        left: 15px;}
+    .events .event-item:nth-child(even) .text-in {
+        right: 15px;}
 }
 @media (min-width: 768px) and (max-width: 991px) {
     html {
