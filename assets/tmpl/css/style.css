@@ -140,6 +140,47 @@ main .video {
     padding: 3rem;}
 .all-case-page .all-case-item .text-in h3 {
         font-size: 2rem;}
+.description-case .video {
+    background-color: #383838;
+    height: 20rem;
+    margin: 5rem 0;}
+.description-case .video .btn-play {
+    width: 6.250rem;
+    height: 6.250rem;
+    padding: 0;
+    border: 0;
+    position: absolute;
+    top: calc(50% - 3.125rem);
+    left: calc(50% - 3.125rem);
+    background-image: url(../../../images/btn-play.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;}
+.description-case {
+    margin-top: 2rem;
+    margin-bottom: 5rem;}
+.case-events {
+    font-size: 0.875rem;
+    line-height: 2;
+    margin-top: 2rem;}
+.case-events h1 {
+    font-size: 3rem;
+    font-weight: 600;}
+.case-events p {
+    margin-top: 6.250rem;}
+.case-numeral-block {
+    line-height: 2;
+    margin: 80px 0;}
+.case-numeral-text h6 {
+    font-weight: 600;}
+.case-numeral-text p {
+    font-size: 0.875rem;}
+.next-case-block {
+    margin-bottom: 80px;
+    line-height: 0;
+    text-align: right;}
+.next-case h4 {
+    text-decoration: underline;}
 .title {
     font-size: 1rem;
     font-weight: 600;
