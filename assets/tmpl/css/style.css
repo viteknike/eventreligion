@@ -181,6 +181,20 @@ main .video {
     text-align: right;}
 .next-case h4 {
     text-decoration: underline;}
+.service-page {
+    padding-top: 5rem;
+    padding-bottom: 10rem;}
+.img-case-plus {
+    width: 14px;}
+.service-case {
+    text-align: center;
+    margin-top: 8rem;}
+.service-content-text h2 {
+    font-size: 24px;
+    line-height: 2;}
+.service-content-images {
+    align-self: flex-end;
+    margin-left: auto;}
 .title {
     font-size: 1rem;
     font-weight: 600;
