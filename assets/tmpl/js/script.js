@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     $('.detail-case-page-slider').owlCarousel({
 
-        dots: false,
+        dots: true,
         center: true,
         items:2,
         autoplay:true,
